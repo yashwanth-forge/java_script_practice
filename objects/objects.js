@@ -1,5 +1,5 @@
 //so what were  basically gonna do is completer objects,prototypes and using related properties 
-//starting with how a basic array looks
+//starting with how a basic object looks
 
 let yuji={
 
@@ -29,7 +29,7 @@ console.log(yuji.power);//itll show blackflash..
 yuji.domain();//we call a method like this...obj.method()..and those paranthesei ae mandatory...just bez we dont have arguments doesnt mean we dont need paranthesis
 
 //now lets get to know about prototypes and other methods to create obj or use objs props
-//we are not gonna cover total inheritance we dont have major use with those in async or fetch..
+//we are not gonna cover total inheritance 
 
 //prototype is basically an object..if u use an object to define anothier object then this used object can be called as prototype
 
@@ -43,8 +43,8 @@ let moji={
 
 moji.__proto__= yuji;
 
-//now moji has all the abilities of his dad
-
+//now moji has all the abilities of his dad..proto types are lookups not just copying..suppose u add a new property in yuji moji can access it too..
+//and there not mojis own properties..if u use ownproperty method ull get false in return
 console.log(moji.moto);
 //power property is in both but the main object has 1st preference
 
@@ -61,3 +61,5 @@ console.log(koji.power);
 koji.ability="sync";
 // the only problem is suppose u rember he had this ability after 60 lines of code ull add but itll be a bit confusing 
 //i mean u createc obj like that earlier and ur giving it properties now..and u basically cant see that total object in code..
+
+//next file will be about classes
