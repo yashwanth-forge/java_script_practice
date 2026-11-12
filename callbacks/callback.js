@@ -1,5 +1,5 @@
 //whats a callback fn...??
-//the fn in which another fn is passsed as an argument is called a callback 
+//its the function passed as an argument in another fn to be simple
 
 function sum(a,b){
     console.log(a+b);
@@ -10,7 +10,7 @@ function prod(a,b){
 }
 
 function call (a,b,callback){
-    callback(a,b);
+   return callback(a,b);
 } //here basically u passed a fn callled callback fn..now when u call the actual fn call u can pass
 //u can pass parameters ie..a , b and a fn that takes two arguments..ill show it.
 
@@ -54,7 +54,7 @@ function calling(){
     setTimeout(()=>{console.log("broooo")},2000);
 }
 //or 
-//let calls=setTimeout(()=>{console.log("yoooo")},3000); wont work because settimeout
+//let calls=setTimeout(()=>{console.log("yoooo")},3000); wont work i mean u cant call it ...tho the line is correct..u cant call beqz even if u call it woudt return anything so theres no use because settimeout
 //is calling another fn so calls will expect some return value or return a function
 //and now u can call
 
